@@ -1,14 +1,33 @@
 puts "salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 print"> "
-user_nombre = gets.chomp.to_i 
+h = gets.chomp.to_i 
 puts "Voici la pyramide :"
-user_nombre. times do |i|
+#h. times do |i|
+#	puts
+#	(h-i). times do
+#		print" "
+#	end
+#		(i+1). times do
+#			print "#"
+#		end
+#	end
+#puts
+tour = 0
+while h > 0
+	tour = tour + 1
+	espace = h
+	i = 0
 	puts
-	(user_nombre-i). times do
-		print" "
+	while espace > 0
+		
+		print " "
+		espace = espace - 1
 	end
-		(i+1). times do
-			print "#"
-		end
+	while i < tour
+		print"#"
+		i = i + 1
 	end
+
+	h = h -1
+end
 puts
